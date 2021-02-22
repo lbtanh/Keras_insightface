@@ -548,7 +548,7 @@ def parse_arguments(argv):
     parser.add_argument("-m", "--model_file", type=str, default=None, help="Saved model, keras h5 / pytorch jit pth / mxnet")
     parser.add_argument("-d", "--data_path", type=str, default="./", help="Dataset path")
     parser.add_argument("-s", "--subset", type=str, default="IJBB", help="Subset test target, could be IJBB / IJBC")
-    parser.add_argument("-b", "--batch_size", type=int, default=64, help="Batch size for get_embeddings")
+    parser.add_argument("-b", "--batch_size", type=int, default=512, help="Batch size for get_embeddings")
     parser.add_argument(
         "-R", "--save_result", type=str, default=default_save_result_name, help="Filename for saving / restore result"
     )
